@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="">
+  <test name="smoke">
+<parameter name="username" value="admin"></parameter>
+<parameter name="pass" value="master"></parameter>
+
+
+    <classes>
+      <class name="testCases.LoginTestCases"/>
+
+    </classes>
+
+
+  </test> <!-- smoke -->
+  <test thread-count="5" name="smoke">
+
+    <classes>
+      <class name="testCases.StockH_TestCases"/>
+
+    </classes>
+
+
+  </test> 
+</suite> <!-- Suite1 -->

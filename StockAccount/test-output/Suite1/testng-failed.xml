@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="smoke(failed)">
+    <parameter name="pass" value="master"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="LoginInValid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.StockH_TestCases">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="addStockHolder"/>
+        </methods>
+      </class> <!-- testCases.StockH_TestCases -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

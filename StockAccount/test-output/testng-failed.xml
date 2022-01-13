@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite3]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AddingStock(failed)">
+    <classes>
+      <class name="testCases.StockH_TestCases">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="addStockHolder"/>
+        </methods>
+      </class> <!-- testCases.StockH_TestCases -->
+    </classes>
+  </test> <!-- AddingStock(failed) -->
+</suite> <!-- Failed suite [Suite3] -->
